@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 115px;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(38, 36, 36);
+    transition: all 3s ease-in-out;
+    border-top: 5px solid yellow;
+}
+nav img{
+    width: 130px;
+    margin: 30px 0 10px 70px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+    gap: 30px;
+}
+.content a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.contentA{
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    align-items: center;
+}
+.content1{
+    display: none;
+}
+i{
+    margin-right: 6px;
+    color: yellow;
+    font-size: 16px;
+}
+.input{
+border: 1px solid rgb(117, 114, 114);
+border-radius: 20px;
+padding-left: 20px;
+height: 30px;
+background: linear-gradient(to right, #303434,#303434,yellow, yellow);
+padding-right: 20px;
+}
+.input i{
+    font-size: 16px;
+    color: black;
+    margin-left: 10px;
+}
+input{
+    background-color: #303434;
+    outline: none;
+    border: none;
+    height: 100%;
+}
+.contentLogo{
+    display: flex;
+    gap: 30px;
+    font-size: 19px;
+    margin-top: 20px;
+}
+.advert{
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 250px;
+    margin-bottom: 30px;
+}
+.advert h1{
+    color: white;
+}
+.resultContainer,.resultContainer2{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    flex-wrap: wrap;
+    width:95%;
+    margin: 0px 0px 0px 4%;
+    color: white;
+}
+.result{
+    width: 180px;
+    margin-left: -10px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+h1{
+    color: white;
+    font-size: 24px;
+}
+i:nth-child(6){
+    rotate: 60deg;
+}
+.bappamLogo{
+    width: 60%;
+    height: 20px;
+    margin-left: 20%;
+}
+.poster{
+    width: 100%;
+    height: 260px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.result h5{
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.result p{
+    background-color: #282929;
+    padding: 5px;
+    width: fit-content;
+    font-size: 12px;
+    color: yellow;
+    border-radius: 2px;
+}
+.advert2{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #141515;
+    color: white;
+    gap: 10px;
+    margin-top: 30px;
+}
+.advert2 .input{
+    width: 50%;
+    height: 40px;
+}
+.advert2 .input input{
+    width: 90%;
+}
+.input1{
+    display: none;
+    width: 100%;
+    height: 40px;
+}
+.input1 input{
+
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 5px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    background-color: #202121;
+    margin-top: 20px;
+}
+.left{
+    margin-left: 100px;
+}
+.left a,.right a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: lightgrey;
+}
+.right{
+    margin-right: 100px;
+}
+.content1 .contentA{
+   display: flex;
+   position: fixed;
+   top: 100px;
+   width: 98%;
+   margin-left: 1%;
+   border-radius: 5px;
+   background-color: #303434;
+   flex-direction: column;
+   height: fit-content;
+   align-items: flex-start;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+.content1 .contentA a{
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+.bars{
+   display: none;
+}
+.search{
+    display: none;
+}
+.extra{
+    margin: 10px;
+}
+@media (min-width:380px) and (max-width:700px){
+    .resultContainer,.resultContainer2{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 98%;
+        margin-left: 2%;
+    }
+    .content{
+      display: none;
+    }
+    nav{
+        width: 100%;
+    }
+    nav i{
+        font-size: 20px;
+    }
+    .bars{
+        display: block;
+        margin-left: 50px;
+    }
+    .search{
+        display: block;
+        margin-right: 50px;
+    }
+    .input1{
+        display: none;
+        transition: all .5s ease-in-out;
+    }
+    .poster{
+        width: 150px;
+        height: 200px;
+    }
+}
+@media (min-width:701px) and (max-width:1000px){
+    .resultContainer,.resultContainer2{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        width: 98%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .search{
+        display: none;
+    }
+    .bars{
+        display: none;
+    }
+    .poster{
+        width: 150px;
+        height: 200px;
+    }
+}
